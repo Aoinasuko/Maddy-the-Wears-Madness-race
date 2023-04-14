@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Maddy the Wears Madness race</name>
+  <author>Aoi_nasuko</author>
+  <packageId>bep.maddy.twmr</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+      <downloadUrl></downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>Nals.FacialAnimation</li>
+    <li>Nals.FacialAnimationExperimentals</li>
+  </loadAfter>
+  <incompatibleWith>
+    <li>bep.littlefairy.ropeworktale</li>
+  </incompatibleWith>
+  <description><![CDATA[
+【対応言語】
+日本語
+English(Machine translation)
+
+狂気を纏う者、マッディー。
+
+<color=#77FFFF><size=20>＊概要</size></color>
+他者の負の感情を元に強くなっていく種族、マッディーを追加します。
+
+<color=#77FFFF><size=15>＊ストーリー</size></color>
+マッディーはある日、ある惑星の「忘れられた大陸」と呼ばれる大陸の地の底から大量に湧き出て来た種族です。
+そして程なくして、他の星にもマッディー達の出現が観測されました。
+彼女たちがどういう経緯で「忘れられた大陸」や他の星の地の底に居たのかは何一つ分かっておらず、
+未だに歴史などの手がかりも一切掴めていない状況です。
+
+しかし、その様な状況でも彼女たちについて判明している事が数点あります。
+それは彼女たちが「他者の負の感情を糧に自身の栄養を満たしている」という事です。
+そしてできる限り長く負の感情を生み出すために、彼女たちは生物を昏睡させつつ苦しめる武器を持っています。
+彼女たちが初めて出現した「忘れられた大陸」では、少なくない数の人間たちが永遠の苦しみに囚われ、
+彼女たちの「餌」として生かされています。
+
+彼女たちは負の感情に引き寄せられる性質があります。
+もしも彼女たちの事を知りたいのであれば、不幸な感情を持つ人物をたくさん用意するといいでしょう。
+
+<color=#77FFFF><size=15>＊入手方法</size></color>
+-このMODで追加される特殊な襲撃で出現するため、倒して捕まえる
+
+<color=#77FFFF><size=15>＊特徴</size></color>
+<color=#77FFFF>-体格がやや小さい</color>
+<color=#77FFFF>-部位HPが高い</color>
+<color=#77FFFF>-気温に非常に強い</color>
+<color=#77FFFF>-人間の武器が装備可能</color>
+<color=#77FFFF>-死体を解体してもペナルティを受けず、食べても人肉扱いではない</color>
+<color=#77FFFF>-ideology導入時、奴隷状態の時に脱走しない</color>
+<color=#77FFFF>-周囲のマッディー以外の種族の心情のマイナス値の合計によって能力が強化される</color>
+
+<color=#FF7777>-周囲のマッディー以外の種族の心情のマイナス値の合計が低いとデバフを受ける</color>
+
+<color=#77FFFF><size=15>＊マッディーの特殊能力について</size></color>
+マッディーはNPと呼ばれる特殊なリソースを持っています。
+この値はマッディーの周囲に心情のマイナス値があるポーンがいるとNPは徐々に合計値まで増えていきます。
+しかし合計値が低くなると、NPは徐々に低下していきます。
+この値が一定以上になると、マッディーは強化されます。
+また、非常に高い値になると敵対的なポーンに強力なデバフを与えるようになります。
+
+<color=#77FFFF><size=20>＊その他、このMODで追加されるもの</size></color>
+-マッディーの研究が追加されます。
+-マッディーの建築物を追加します。
+-マッディーの衣装を追加します。
+
+]]></description>
+</ModMetaData>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<ThoughtDef>
+		<defName>Maddy_NP</defName>
+		<workerClass>Maddy_Race.ThoughtWorker_NP</workerClass>
+		<stages>
+			<li>
+				<label>Not enough negative emotions</label>
+				<description>I want more despair.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+			<li>
+				<label>Negative emotions are enough</label>
+				<description>But I still want despair.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>Negative emotions are enough</label>
+				<description>But I still want despair.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>Negative emotions are enough</label>
+				<description>But I still want despair.</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+			<li>
+				<label>Negative emotions are enough</label>
+				<description>This space is very comfortable with despair all around.</description>
+				<baseMoodEffect>50</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

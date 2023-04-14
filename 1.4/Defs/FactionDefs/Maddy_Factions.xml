@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>Maddy_Raider</defName>
+    <label>Maddy Raider</label>
+    <pawnSingular>Raider</pawnSingular>
+    <pawnsPlural>Raiders</pawnsPlural>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Maddy Raiders</fixedName>
+    <factionIconPath>World/WorldObjects/Expanding/Sites/DownedRefugee</factionIconPath>
+    <permanentEnemy>true</permanentEnemy>
+    <techLevel>Spacer</techLevel>
+    <hidden>true</hidden>
+    <rescueesCanJoin>false</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+    <allowedCultures><li>Kriminul</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Maddy_Story</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <earliestRaidDays>9999</earliestRaidDays>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Maddy_Raider>10</Maddy_Raider>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1.0</Baseliner>
+      </xenotypeChances>
+    </xenotypeSet>
+  </FactionDef>
+
+</Defs>

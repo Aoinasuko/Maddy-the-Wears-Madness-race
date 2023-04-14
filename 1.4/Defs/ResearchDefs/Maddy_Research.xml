@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchTabDef>
+		<defName>Maddy_Research</defName>
+		<label>Maddy</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+	    <defName>Maddy_Knowledge</defName>
+	    <label>Knowledge</label>
+	    <description>You will learn about Maddy.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Maddy_Research</li>
+	    </tab>
+	    <researchViewX>0</researchViewX>
+	    <researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Maddy_Weapon</defName>
+	    <label>Weapon</label>
+	    <description>It will be possible to create Maddy weapons.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Maddy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Maddy_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Maddy_Costumes</defName>
+	    <label>Costumes</label>
+	    <description>It will allow you to create Maddy outfits.</description>
+	    <baseCost>500</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Maddy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Maddy_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

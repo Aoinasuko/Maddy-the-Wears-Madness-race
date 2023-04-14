@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Maddy_NegativePower.label>ネガティブパワー</Maddy_NegativePower.label>
+  <Maddy_NegativePower.description>周囲の生物の負の感情の量によって能力が変化します.</Maddy_NegativePower.description>
+
+  <Maddy_NegativePowerEnemy.label>ネガティブパワー(Enemy)</Maddy_NegativePowerEnemy.label>
+  <Maddy_NegativePowerEnemy.description>マッディーの能力の影響を受けている状態です.</Maddy_NegativePowerEnemy.description>
+
+  <Maddy_SoulBond.label>ソウルバンド</Maddy_SoulBond.label>
+  <Maddy_SoulBond.description>マッディーの鎌によって魂が封印されている状態です.</Maddy_SoulBond.description>
+
+
+</LanguageData>

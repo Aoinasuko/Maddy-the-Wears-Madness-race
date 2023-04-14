@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Maddy_Child_A.title>子供のマッディー</Maddy_Child_A.title>
+  <Maddy_Child_A.titleShort>マッディー</Maddy_Child_A.titleShort>
+  <Maddy_Child_A.baseDesc>[PAWN_nameDef]はマッディーです.\nその出生は謎に包まれています.</Maddy_Child_A.baseDesc>
+
+  <Maddy_Adulthood_A.title>マッディー</Maddy_Adulthood_A.title>
+  <Maddy_Adulthood_A.titleShort>マッディー</Maddy_Adulthood_A.titleShort>
+  <Maddy_Adulthood_A.baseDesc>[PAWN_nameDef]はマッディーです.\nその出生は謎に包まれています.</Maddy_Adulthood_A.baseDesc>
+
+
+</LanguageData>

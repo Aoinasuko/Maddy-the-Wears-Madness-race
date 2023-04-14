@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Maddy_Pawn.label>マッディー</Maddy_Pawn.label>
+  <Maddy_Pawn.description>マッディーはある日,ある惑星の「忘れられた大陸」と呼ばれる大陸の地の底から大量に湧き出て来た種族です.\nそして程なくして,他の星にもマッディー達の出現が観測されました.\n彼女たちがどういう経緯で「忘れられた大陸」や他の星の地の底に居たのかは何一つ分かっておらず,未だに歴史などの手がかりも一切掴めていない状況です.\n\nしかし,その様な状況でも彼女たちについて判明している事が数点あります.\nそれは彼女たちが「他者の負の感情を糧に自身の栄養を満たしている」という事です.\nそしてできる限り長く負の感情を生み出すために,彼女たちは生物を昏睡させつつ苦しめる武器を持っています.\n彼女たちが初めて出現した「忘れられた大陸」では、少なくない数の人間たちが永遠の苦しみに囚われ,彼女たちの「餌」として生かされています.\n\n彼女たちは負の感情に引き寄せられる性質があります. もしも彼女たちの事を知りたいのであれば,不幸な感情を持つ人物をたくさん用意するといいでしょう.</Maddy_Pawn.description>
+  <Maddy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Maddy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Maddy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Maddy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Maddy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>wing</Maddy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>
+  <Maddy_Pawn.tools.0.label>歯</Maddy_Pawn.tools.0.label>
+  <Maddy_Pawn.tools.1.label>左拳</Maddy_Pawn.tools.1.label>
+  <Maddy_Pawn.tools.2.label>右拳</Maddy_Pawn.tools.2.label>
+
+
+</LanguageData>

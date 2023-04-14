@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="Maddy_BaseWeapon_Melee" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <tradeability>Sellable</tradeability>
+    <equipmentType>Primary</equipmentType>
+    <useHitPoints>true</useHitPoints>
+    <pathCost>14</pathCost>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.20</SellPriceFactor>
+    </statBases>
+    <graphicData>
+      <onGroundRandomRotateAngle>-35</onGroundRandomRotateAngle>
+    </graphicData>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+    <relicChance>0</relicChance>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_MakeBow</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <weaponTags>
+      <li>Maddy_Melee</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+  </ThingDef>
+  
+  <!-- ======================================================== -->
+  
+  <ThingDef ParentName="Maddy_BaseWeapon_Melee">
+    <defName>Maddy_MaddyScythe</defName>
+    <label>Maddy MaddyScythe</label>
+    <description>This is a large sickle handled by Maddy. By swinging it around and attacking, it also damages surrounding enemies. Furthermore, it binds the enemy's soul and immediately brings it down.</description>
+    <graphicData>
+      <texPath>Maddy/Thing/Weapon/MaddyScythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>25</Plasteel>
+      <Gold>5</Gold>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.6</Mass>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>Maddy_Melee</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Maddy_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Maddy_Weapon</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li>
+        <compClass>Maddy_Race.Maddy_Weapon_Scythe</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

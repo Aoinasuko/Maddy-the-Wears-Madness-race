@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>Maddy_Wing</defName>
+    <label>Wing</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Maddy_Tail</defName>
+    <label>Tail</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+</Defs>

@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Maddy_Pawn</defName>
+		<label>Maddy</label>
+		<description>Maddy's are a race that one day sprang up in great numbers from the bowels of a continent called "The Forgotten Continent" on one planet. Soon after, Maddies were observed appearing on other planets as well. We know nothing about how they came to be on the Forgotten Continent or at the bottom of other planets, and there are still no clues to their history. We still have no clue as to their history.\n\nHowever, we do know a few things about them. They feed on the negative emotions of others to nourish themselves. And in order to create negative emotions for as long as possible, they have a weapon with which they can put living creatures in a coma and make them suffer. On the Forgotten Continent, where they first appeared, not a few humans were trapped in eternal suffering. They are kept alive as "food" for these women.\n\nThey are drawn to negative emotions. If you want to know more about them, you will have plenty of unhappy emotional figures to choose from.</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>-1</maleGenderProbability>
+				<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<maxDamageForSocialfight>3</maxDamageForSocialfight>
+				<minAgeForAdulthood>1</minAgeForAdulthood>
+				<humanRecipeImport>true</humanRecipeImport>
+				<immuneToXenophobia>true</immuneToXenophobia>
+				<allowHumanBios>false</allowHumanBios>
+				<lovinIntervalHoursFromAge>
+					<points>
+						<li>(4, 5.5)</li>
+						<li>(6, 5.0)</li>
+						<li>(950, 5.0)</li>
+						<li>(1000, 10.0)</li>
+					</points>
+				</lovinIntervalHoursFromAge>
+				<disallowedTraits>
+					<li>
+						<defName>Beauty</defName>
+						<degree>-1</degree>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>-2</degree>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+					</li>
+					<li>
+						<defName>DislikesMen</defName>
+					</li>
+					<li>
+						<defName>DislikesWomen</defName>
+					</li>
+					<li>
+						<defName>AnnoyingVoice</defName>
+					</li>
+					<li>
+						<defName>CreepyBreathing</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+					<oldHairAgeRange>10000~99999</oldHairAgeRange>
+					<oldHairColorGen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<weight>1</weight>
+								<only>RGBA(0.788, 0.62, 0.957,1)</only>
+							</li>
+						</options>
+					</oldHairColorGen>
+					<headTypes Inherit="False">
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					</bodyTypes>
+					<headOffset>(-0.1, -0.186)</headOffset>
+					<customDrawSize>(1, 1)</customDrawSize>
+					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
+					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1, 1)</customPortraitHeadDrawSize>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.788, 0.62, 0.957,1)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,104,104,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,189,54,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,248,137,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(169,255,172,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(153,255,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(154,164,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(223,181,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(172,90,60,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,250,240,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(233,205,113,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.788, 0.62, 0.957,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>wing</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(1.0,1.0,1.0,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<li>
+							<path>Maddy/Race/Horn/Horn</path>
+							<bodyPart>Horn</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<drawSize>1</drawSize>
+							<colorChannel>wing</colorChannel>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
+									</bodyTypes>
+								</west>
+								<south>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Maddy/Race/Wing/Wing</path>
+							<bodyPart>Maddy_Wing</bodyPart>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawSize>1</drawSize>
+							<colorChannel>wing</colorChannel>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+						</li>
+						<li>
+							<path>Maddy/Race/Tail/Tail</path>
+							<bodyPart>Maddy_Tail</bodyPart>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawSize>1</drawSize>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+				<reproduction>
+					<!-- 男の生殖率 -->
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(3, 0)</li>
+							<li>(5, 1)</li>
+							<li>(900, 1)</li>
+							<li>(950, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+					<!-- 女の生殖率 -->
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(3, 0)</li>
+							<li>(5, 1)</li>
+							<li>(900, 1)</li>
+							<li>(950, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+				</reproduction>
+				<growthAges>
+					<li>1</li>
+					<li>3</li>
+					<li>5</li>
+				</growthAges>
+			</generalSettings>
+			<graphicPaths>
+				<head>
+					<path>Maddy/Race/Head/Average_Normal</path>
+					<headtypeGraphics>
+						<Male_AverageNormal>Maddy/Race/Head/Average_Normal</Male_AverageNormal>
+						<Female_AverageNormal>Maddy/Race/Head/Average_Normal</Female_AverageNormal>
+					</headtypeGraphics>
+				</head>
+				<body>
+					<path>Maddy/Race/Body/</path>
+				</body>
+				<skeleton>Maddy/Race/Bone/Bone</skeleton>
+				<skull>Maddy/Race/HeadBone/HeadBone</skull>
+				<apparel>
+					<!-- Apparel Graphics options go here -->
+				</apparel>
+			</graphicPaths>
+			<relationSettings>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+			</relationSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+				<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
+				<apparelList>
+					<li>Maddy_SimpleCloth</li>
+					<li>Maddy_BlindfoldandGag</li>
+					<li>Maddy_Blindfold</li>
+					<li>Maddy_SimpleCollor</li>
+					<li>Maddy_SlaveStrap</li>
+					<li>Maddy_SimpleArmor</li>
+					<li>Maddy_MaidBand</li>
+					<li>Maddy_MaidCloth</li>
+					<li>Maddy_NobleCloth</li>
+					<li>Maddy_NobleCape</li>
+					<li>Maddy_SwimSuit</li>
+				</apparelList>
+				<weaponList>
+					<li>Maddy_MaddyScythe</li>
+				</weaponList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+					<li>Tail</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+			</raceRestriction>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+					<li>EnvironmentDark</li>
+					<li>NeedOutdoors</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>AteWithoutTable</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Maddy</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+		</alienRace>
+		<statBases>
+			<Mass>5</Mass>
+			<MarketValue>3000</MarketValue>
+			<MoveSpeed>6.75</MoveSpeed>
+			<ToxicResistance>1</ToxicResistance>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ComfyTemperatureMin>-1000</ComfyTemperatureMin>
+			<ComfyTemperatureMax>1000</ComfyTemperatureMax>
+			<LeatherAmount>75</LeatherAmount>
+			<MeatAmount>30</MeatAmount>
+			<PainShockThreshold>0.95</PainShockThreshold>
+			<RoyalFavorValue>10</RoyalFavorValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Bite</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Blunt</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Blunt</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<fleshType>Maddy</fleshType>
+			<makesFootprints>false</makesFootprints>
+			<baseHungerRate>0.6</baseHungerRate>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<leatherDef>Leather_Light</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<trainability>Advanced</trainability>
+			<body>Maddy</body>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHealthScale>3.0</baseHealthScale>
+			<wildness>0.15</wildness>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>18</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<litterSizeCurve>
+				<points>
+					<li>(0, 0)</li>
+					<li>(1, 0.65)</li>
+					<li>(2, 0.30)</li>
+					<li>(3, 0.05)</li>
+					<li>(4, 0)</li>
+					<li>(5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Maddy_Baby</def>
+					<minAge>0</minAge>
+					<headOffsetDirectional>
+						<north>(0.0, 0.0)</north>
+						<east>(0.06, 0.0)</east>
+						<south>(0.0, 0.0)</south>
+						<west>(-0.06, 0.0)</west>
+					</headOffsetDirectional>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Maddy_Child</def>
+					<minAge>1</minAge>
+					<headOffsetDirectional>
+						<north>(0.0, 0.0)</north>
+						<east>(0.06, 0.0)</east>
+						<south>(0.0, 0.0)</south>
+						<west>(-0.06, 0.0)</west>
+					</headOffsetDirectional>
+				</li>
+				<li>
+					<def>Maddy_Adult</def>
+					<minAge>5</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>3</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>3</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">3</Childcare>
+				<BasicWorker>1</BasicWorker>
+				<Warden>5</Warden>
+				<Handling>3</Handling>
+				<Cooking>3</Cooking>
+				<Hunting>3</Hunting>
+				<Construction>3</Construction>
+				<Growing>3</Growing>
+				<Mining>3</Mining>
+				<PlantCutting>3</PlantCutting>
+				<Smithing>3</Smithing>
+				<Tailoring>3</Tailoring>
+				<Art>3</Art>
+				<Crafting>3</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>1</Cleaning>
+				<Research>3</Research>
+			</lifeStageWorkSettings>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(3,0)</li>
+					<li>(18,0)</li>
+					<li>(20,100)</li>
+					<li>(30,100)</li>
+					<li>(31,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+			</hediffGiverSets>
+		</race>
+		<comps>
+			<li Class="Maddy_Race.CompProperties_Maddy">
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<LifeStageDef>
+		<defName>Maddy_Baby</defName>
+		<label>Maddy Baby</label>
+		<reproductive>false</reproductive>
+		<visible>false</visible>
+		<developmentalStage>Baby</developmentalStage>
+		<statFactors>
+			<MoveSpeed>0.25</MoveSpeed>
+		</statFactors>
+		<meleeDamageFactor>0.5</meleeDamageFactor>
+		<healthScaleFactor>0.25</healthScaleFactor>
+	</LifeStageDef>
+	
+	<LifeStageDef>
+		<defName>Maddy_Child</defName>
+		<label>Maddy Child</label>
+		<reproductive>false</reproductive>
+		<visible>false</visible>
+		<developmentalStage>Child</developmentalStage>
+		<statFactors>
+			<MoveSpeed>0.75</MoveSpeed>
+		</statFactors>
+		<meleeDamageFactor>0.5</meleeDamageFactor>
+		<healthScaleFactor>0.5</healthScaleFactor>
+	</LifeStageDef>
+	
+	<LifeStageDef>
+		<defName>Maddy_Adult</defName>
+		<label>Maddy Adult</label>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<visible>false</visible>
+		<developmentalStage>Adult</developmentalStage>
+	</LifeStageDef>
+	
+</Defs>

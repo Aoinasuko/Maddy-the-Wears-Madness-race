@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>Maddy_Raid</defName>
+		<label>Emergence of Maddy</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Maddy_Race.IncidentWorker_MaddyRaid</workerClass>
+		<letterLabel>Emergence of Maddy</letterLabel>
+		<letterText>From the depths of the earth, Maddy attacked in search of negative emotions.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>2.7</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<tale>Raid</tale>
+	</IncidentDef>
+
+</Defs>

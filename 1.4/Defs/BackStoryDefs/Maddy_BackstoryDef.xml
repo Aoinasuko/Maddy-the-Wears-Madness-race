@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef Name="Maddy_BaseBackStory" Abstract="True">
+		<bodyTypeMale>Female</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Maddy_Story</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Maddy_BaseBackStory">
+		<defName>Maddy_Child_A</defName>
+		<title>Maddy Child</title>
+		<titleShort>Child</titleShort>
+		<baseDesc>[PAWN_nameDef] is a Maddy from nowhere. Much of its ecology is shrouded in mystery.</baseDesc>
+		<slot>Childhood</slot>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Maddy_BaseBackStory">
+		<defName>Maddy_Adulthood_A</defName>
+		<title>Adult Maddy</title>
+		<titleShort>Adult Maddy</titleShort>
+		<baseDesc>[PAWN_nameDef] is a Maddy from nowhere. Much of its ecology is shrouded in mystery.</baseDesc>
+		<slot>Adulthood</slot>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>
