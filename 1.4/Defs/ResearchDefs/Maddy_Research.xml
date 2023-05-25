@@ -35,20 +35,4 @@
 	    <researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 	
-	<ResearchProjectDef>
-	    <defName>Maddy_Costumes</defName>
-	    <label>Costumes</label>
-	    <description>It will allow you to create Maddy outfits.</description>
-	    <baseCost>500</baseCost>
-	    <techLevel>Industrial</techLevel>
-	    <tab>
-	      <li>Maddy_Research</li>
-	    </tab>
-	    <prerequisites>
-	      <li>Maddy_Knowledge</li>
-	    </prerequisites>
-	    <researchViewX>1</researchViewX>
-	    <researchViewY>5</researchViewY>
-	</ResearchProjectDef>
-	
 </Defs>

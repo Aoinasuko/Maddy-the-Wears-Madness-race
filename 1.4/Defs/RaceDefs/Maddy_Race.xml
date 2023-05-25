@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+	<AlienRace.ThingDef_AlienRace Tag="BEPRace" ParentName="BasePawn">
 		<defName>Maddy_Pawn</defName>
 		<label>Maddy</label>
 		<description>Maddy's are a race that one day sprang up in great numbers from the bowels of a continent called "The Forgotten Continent" on one planet. Soon after, Maddies were observed appearing on other planets as well. We know nothing about how they came to be on the Forgotten Continent or at the bottom of other planets, and there are still no clues to their history. We still have no clue as to their history.\n\nHowever, we do know a few things about them. They feed on the negative emotions of others to nourish themselves. And in order to create negative emotions for as long as possible, they have a weapon with which they can put living creatures in a coma and make them suffer. On the Forgotten Continent, where they first appeared, not a few humans were trapped in eternal suffering. They are kept alive as "food" for these women.\n\nThey are drawn to negative emotions. If you want to know more about them, you will have plenty of unhappy emotional figures to choose from.</description>
@@ -68,7 +68,7 @@
 						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 					</bodyTypes>
-					<headOffset>(-0.1, -0.186)</headOffset>
+					<headOffset>(-0.1, -0.26)</headOffset>
 					<customDrawSize>(1, 1)</customDrawSize>
 					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
@@ -154,38 +154,17 @@
 					</colorChannels>
 					<bodyAddons>
 						<li>
-							<path>Maddy/Race/Horn/Horn</path>
+							<path>BEPRaceCore/Race/MaddyHorn/MaddyHorn</path>
 							<bodyPart>Horn</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
 							<drawSize>1</drawSize>
 							<colorChannel>wing</colorChannel>
 							<drawnInBed>true</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
-							<offsets>
-								<west>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
-									</bodyTypes>
-								</west>
-								<south>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.04)</Baby>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,-0.07)</Baby>
-									</bodyTypes>
-								</east>
-							</offsets>
+							<alignWithHead>true</alignWithHead>
 						</li>
 						<li>
-							<path>Maddy/Race/Wing/Wing</path>
+							<path>BEPRaceCore/Race/MaddyWing/MaddyWing</path>
 							<bodyPart>Maddy_Wing</bodyPart>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawSize>1</drawSize>
@@ -194,13 +173,21 @@
 							<drawnDesiccated>false</drawnDesiccated>
 						</li>
 						<li>
-							<path>Maddy/Race/Tail/Tail</path>
+							<path>BEPRaceCore/Race/MaddyTail/MaddyTail</path>
 							<bodyPart>Maddy_Tail</bodyPart>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawSize>1</drawSize>
 							<colorChannel>skin</colorChannel>
 							<drawnInBed>false</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<east>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
+									</bodyTypes>
+								</east>
+							</offsets>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -231,21 +218,12 @@
 				</growthAges>
 			</generalSettings>
 			<graphicPaths>
-				<head>
-					<path>Maddy/Race/Head/Average_Normal</path>
-					<headtypeGraphics>
-						<Male_AverageNormal>Maddy/Race/Head/Average_Normal</Male_AverageNormal>
-						<Female_AverageNormal>Maddy/Race/Head/Average_Normal</Female_AverageNormal>
-					</headtypeGraphics>
-				</head>
-				<body>
-					<path>Maddy/Race/Body/</path>
-				</body>
-				<skeleton>Maddy/Race/Bone/Bone</skeleton>
-				<skull>Maddy/Race/HeadBone/HeadBone</skull>
-				<apparel>
-					<!-- Apparel Graphics options go here -->
-				</apparel>
+				<head>BEPRaceCore/Race/Head/Average_Normal</head>
+				<body>BEPRaceCore/Race/Body/Normal/</body>
+				<skeleton>BEPRaceCore/Race/Bone/Bone</skeleton>
+				<skull>BEPRaceCore/Race/HeadBone/HeadBone</skull>
+				<skinShader>Cutout</skinShader>
+				<skinColor>(1,1,1,1)</skinColor>
 			</graphicPaths>
 			<relationSettings>
 				<relationChanceModifierLover>0</relationChanceModifierLover>
@@ -262,17 +240,6 @@
 				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
 				<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
 				<apparelList>
-					<li>Maddy_SimpleCloth</li>
-					<li>Maddy_BlindfoldandGag</li>
-					<li>Maddy_Blindfold</li>
-					<li>Maddy_SimpleCollor</li>
-					<li>Maddy_SlaveStrap</li>
-					<li>Maddy_SimpleArmor</li>
-					<li>Maddy_MaidBand</li>
-					<li>Maddy_MaidCloth</li>
-					<li>Maddy_NobleCloth</li>
-					<li>Maddy_NobleCape</li>
-					<li>Maddy_SwimSuit</li>
 				</apparelList>
 				<weaponList>
 					<li>Maddy_MaddyScythe</li>
@@ -328,7 +295,7 @@
 					<value>
 						<hasStyle>true</hasStyle>
 						<styleTagsOverride>
-							<li>Maddy</li>
+							<li>BEPRace</li>
 						</styleTagsOverride>
 					</value>
 				</li>
@@ -515,6 +482,15 @@
 			<li Class="Maddy_Race.CompProperties_Maddy">
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="BEPRace_Core.BEPRace_Setting">
+				<ignoreDead>false</ignoreDead>
+				<fleeMeat>true</fleeMeat>
+				<ignoreAge>true</ignoreAge>
+				<ignoreFlee>true</ignoreFlee>
+				<slaveWorkSpeed>1.0</slaveWorkSpeed>
+			</li>
+		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 	
 	<LifeStageDef>
