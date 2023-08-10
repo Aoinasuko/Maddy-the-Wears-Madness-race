@@ -52,7 +52,7 @@
     </pawnGroupMakers>
     <xenotypeSet>
       <xenotypeChances>
-        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1.0</Baseliner>
+        <Maddy_Maddy MayRequire="Ludeon.RimWorld.Biotech">1.0</Maddy_Maddy>
       </xenotypeChances>
     </xenotypeSet>
     <modExtensions>

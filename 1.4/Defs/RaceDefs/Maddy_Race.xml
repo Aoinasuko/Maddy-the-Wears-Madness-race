@@ -273,6 +273,10 @@
 					<li>Head</li>
 					<li>BodyType</li>
 				</blackEndoCategories>
+				<xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Maddy_Maddy</li>
+				</xenotypeList>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>

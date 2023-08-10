@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>Maddy_Maddy</defName>
+    <label>Maddy</label>
+    <description>It is a basic Maddy.</description>
+    <iconPath>BEPRaceCore/UI/Gene/BrilliancePower</iconPath>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BEP_WishPower</li>
+      <li>BEP_Wish_Annihilation</li>
+      <li>MeleeDamage_Strong</li>
+      <li>KillThirst</li>
+      <li>Neversleep</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Crafting</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

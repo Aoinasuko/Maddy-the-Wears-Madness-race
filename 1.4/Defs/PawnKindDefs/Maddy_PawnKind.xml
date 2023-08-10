@@ -39,6 +39,12 @@
 		<initialWillRange>3~5</initialWillRange>
 		<initialResistanceRange>1~3</initialResistanceRange>
 		<defaultFactionType>Maddy_Raider</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Maddy_Maddy MayRequire="Ludeon.RimWorld.Biotech">999</Maddy_Maddy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 	<PawnKindDef>
@@ -75,6 +81,12 @@
 		<initialWillRange>3~5</initialWillRange>
 		<initialResistanceRange>1~3</initialResistanceRange>
 		<defaultFactionType>Maddy_Raider</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Maddy_Maddy MayRequire="Ludeon.RimWorld.Biotech">999</Maddy_Maddy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 </Defs>
